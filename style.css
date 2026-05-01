@@ -1,0 +1,295 @@
+/*na*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFF9FA;
+    margin: 0;
+}
+
+
+
+.navigation {
+    background-color: rgb(255, 240, 248);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+   
+}
+
+h4 {
+    color: purple;
+    font-style: oblique;
+    margin: 0;
+}
+
+.lien a {
+    color: #A63D52;
+    word-spacing: 60px;
+    text-decoration: none;
+    font-size: large;
+   
+   
+}
+
+.lien a:hover {
+    color: #e5123c;
+    transition: scale(1,3);
+     font-weight:bold;
+}
+
+img {
+    margin-top: 50px;
+    margin-left: 50px;
+    float: left;
+    width: 45%;
+    border-radius: 15px;
+   
+}
+
+.contenue {
+    margin-top: 100px;
+    margin-left: 50%;
+    padding: 20px;
+    text-align: left;
+}
+
+h3 {
+    color: #be072b;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #2F363F;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #A63D52;
+    color: aliceblue;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #be072b;
+    transform: scale(1.05);
+}
+/*about us */
+
+.about-us{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.about-us+h2{
+    color:#be072b;
+    font-size: large;
+
+
+}
+
+.Nous{
+    float: right;
+    border-radius: 5px;
+    height: 50%;
+}
+
+h2{
+    color: palevioletred;
+    font-size: large;
+    font-weight: bold;
+
+}
+/* nos service */
+.Services{
+    margin-left: 50px;
+    
+}
+
+b{
+    font-family: verdana;
+    color:rgb(211, 14, 80);
+}
+
+/* catalogue*/
+
+.fleur {
+    border: 1px solid  rgb(211, 14, 80);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.fleur img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px ;
+}
+/* .fleur img:hover {
+    transform: scale(1,2);
+    transition: 0,3s ease;
+
+
+} */
+.fleur p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+
+.r{
+    color:palevioletred;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.ac{
+    justify-content: center;
+    display: flex;
+    background-color: #e62d86;
+    color: aliceblue;
+    padding: 5px ;
+    border-radius: 40px;
+    transition: 0.3s;
+    margin: 0;
+
+}
+.ac:hover{
+    background-color: rgb(122, 6, 77);
+    color:white ;
+    transform: scale(1.05); 
+   
+}
+
+/*contact  */
+form {
+    max-width: 450px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+fieldset {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+legend {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 10px;
+    color: plum;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #666;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border-color:plum;
+}
+
+input[type="submit"] {
+    background-color:plum;
+    color: white;
+    padding: 12px 25px;
+    border: 1px plum;
+    border-radius: 25px;
+    font-size: 15px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: purple;
+}
+
+input[type="reset"] {
+    background: pink;
+    border-radius: 25px;
+    color: white;
+    border: 1px plum;
+    margin-right: 15px;
+    font-size: 15px;
+   padding: 12px 25px;
+    
+}
+
+input[type="reset"]:hover {
+    background-color: purple;
+    
+
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .lien a {
+        word-spacing: 15px;
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    img, .Nous {
+        width: 90%;
+        float: none;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .contenue {
+        margin-left: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .fleur {
+        width: 90%;
+        display: block;
+        margin: 15px auto;
+    }
+
+    .about-us, .Services {
+        margin-left: 15px;
+        text-align: center;
+    }
+}
+
+
+
+
+
