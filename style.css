@@ -18,7 +18,6 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
     box-sizing: border-box;
    
 }
@@ -249,47 +248,42 @@ input[type="reset"]:hover {
 
 }
 
-@media (max-width: 768px) {
-    .navigation {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
+@media screen and (max-width: 768px) {
+  
+  .navigation {
+    align-items: flex-start;
+    padding: 10px 20px;
+    position: fixed;
+  }
 
-    .lien a {
-        word-spacing: 15px;
-        font-size: 14px;
-        display: block;
-        text-align: center;
-        margin: 5px 0;
-    }
+  h4 {
+    text-align: right;
+    width: 100%;
+   
+  }
 
-    img, .Nous {
-        width: 90%;
-        float: none;
-        margin: 10px auto;
-        display: block;
-    }
+  .lien {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;       
+    width: 100%;
+    background-color: rgb(255, 240, 248);
+  }
 
-    .contenue {
-        margin-left: 0;
-        text-align: center;
-        padding: 10px;
-    }
+  .lien a {
+    padding: 10px 20px;
+    word-spacing: normal;
+  }
 
-    .fleur {
-        width: 90%;
-        display: block;
-        margin: 15px auto;
-    }
+  .navigation::before {
+    content: "☰";
+    font-size: 28px;
+    color: #A63D52;
+    margin-bottom: 10px;
+  }
 
-    .about-us, .Services {
-        margin-left: 15px;
-        text-align: center;
-    }
+  .navigation:hover .lien {
+    display: flex;
+  }
 }
-
-
-
-
-
