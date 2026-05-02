@@ -1,36 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>accuiel</title>
-    <link href="style.css" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet"/>
     <script src="script.js" defer></script>
-  </head>
-  <body>
+    <title>contact</title>
+</head>
+<body>
     <nav class="navigation">
-      <h4 classe="logo">Floral Universe</h4>
-      <div class="lien">
+        <h4 classe="logo">Floral Universe</h4>
+        <div class="lien">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="products.html">Products</a>
+        <a href="Products.html">Products</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
-      </div>
+        </div>
     </nav>
-    
+    <section id="Contact">
+      <form>
+        <fieldset>
+          <legend>Contact us</legend>
+          Name:<br />
+          <input
+            type="text"
+            placeholder="Enter your name"
+            maxlength="50"
+            required
+          /><br /><br />
+          email:<br />
+          <input
+            type="email"
+            placeholder="Enter your email"
+            required
+          /><br /><br />
+          Number:<br />
+          <input
+            type="tel"
+            placeholder="Enter your number"
+            pattern="[0-9]{10}"
+            required
+          /><br /><br />
+          <input type="reset" />
+          <input type="submit" />
+        </fieldset>
+      </form>
+    </section>
 
-    <img src="images/fleur.jpeg" alt="fleur" />
-    <div class="contenue">
-      <h3>Every flower tells a story, what will be yours?</h3>
-      <p>
-        Let yourself be carried away by the sweetness of our petals and the
-        fragrance of our creations. At Univers Floral, we believe that every
-        flower is a message of emotion. Explore our floral universe where nature
-        expresses itself with elegance and finesse.
-      </p>
-      <br /><br />
-      <a href="Products.html" class="button">Buy now</a>
-    </div>
     <footer class="footer-site">
     <div class="footer-content">
         <div class="footer-section">
